@@ -1,0 +1,113 @@
+# PROLT-V2 TunerStudio pin names: "<connector pin> - <function>"
+# 32-pin Molex connector U101. Pin map from PROLT-V2 Hardware/PROLT_V2.kicad_pcb (REV B).
+pins:
+# ---------------- outputs ----------------
+  - id: C13
+    class: outputs
+    ts_name: A1 - Coil 1
+
+  - id: E5
+    class: outputs
+    ts_name: A2 - Coil 2
+
+  - id: E4
+    class: outputs
+    ts_name: A3 - Coil 3 (JP101)
+
+  - id: D2
+    class: outputs
+    ts_name: A4 - Tach Output
+
+  - id: D10
+    class: outputs
+    ts_name: B1 - Injector 4
+
+  - id: D11
+    class: outputs
+    ts_name: C1 - Injector 3
+
+  - id: A9
+    class: outputs
+    ts_name: D1 - Injector 2
+
+  - id: D3
+    class: outputs
+    ts_name: E1 - Injector 1
+
+  - id: D13
+    class: outputs
+    ts_name: G3 - LS Output 1
+
+  - id: C6
+    class: outputs
+    ts_name: G4 - LS Output 2
+
+  - id: A8
+    class: outputs
+    ts_name: A3 - LS Output 3 (JP101)
+
+  - id: D15
+    class: outputs
+    ts_name: D4 - LS Output 4
+
+  - id: B14
+    class: outputs
+    ts_name: H3 - Stepper A+
+
+  - id: C7
+    class: outputs
+    ts_name: H2 - Stepper A-
+
+  - id: C8
+    class: outputs
+    ts_name: H4 - Stepper B+
+
+  - id: B15
+    class: outputs
+    ts_name: H1 - Stepper B-
+
+# ---------------- analog inputs ----------------
+  - id: EFI_ADC_12
+    class: analog_inputs
+    ts_name: B2 - IAT
+
+  - id: EFI_ADC_13
+    class: analog_inputs
+    ts_name: B3 - CLT
+
+  - id: EFI_ADC_10
+    class: analog_inputs
+    ts_name: B4 - MAP
+
+  - id: EFI_ADC_4
+    class: analog_inputs
+    ts_name: C2 - TPS
+
+  - id: EFI_ADC_0
+    class: analog_inputs
+    ts_name: C3 - Aux Analog 1
+
+  - id: EFI_ADC_1
+    class: analog_inputs
+    ts_name: C4 - Aux Analog 2
+
+  - id: EFI_ADC_5
+    class: analog_inputs
+    ts_name: G1 - 12V Key
+
+# ---------------- event / switch inputs ----------------
+  - id: E1
+    class: event_inputs
+    ts_name: F2 - VR Crank
+
+  - id: [E12, E12]
+    class: [event_inputs, switch_inputs]
+    ts_name: E3 - CMP / Hall
+
+  - id: [E13, E13]
+    class: [event_inputs, switch_inputs]
+    ts_name: D2 - Digital Input 1
+
+  - id: [E14, E14]
+    class: [event_inputs, switch_inputs]
+    ts_name: D3 - Digital Input 2

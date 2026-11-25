@@ -1,0 +1,48 @@
+! PROLT-V2 TunerStudio .ini options: hide what this hardware does not have
+
+#define MAIN_HELP_URL "https://github.com/ADVecu/PROLT-V2"
+#define FRONTEND_TITLE_BAR_NAME "PROLT-V2"
+
+! up to 4 cylinders (4 injectors, 3 coils)
+#define ts_show_cylinder_5 false
+#define ts_show_cylinder_6 false
+#define ts_show_cylinder_7 false
+#define ts_show_cylinder_8 false
+#define ts_show_cylinder_9 false
+#define ts_show_cylinder_10 false
+#define ts_show_cylinder_11 false
+#define ts_show_cylinder_12 false
+#define ts_show_fuel_trim_cylinder_5 false
+#define ts_show_fuel_trim_cylinder_6 false
+#define ts_show_fuel_trim_cylinder_7 false
+#define ts_show_fuel_trim_cylinder_8 false
+#define ts_show_fuel_trim_cylinder_9 false
+#define ts_show_fuel_trim_cylinder_10 false
+#define ts_show_fuel_trim_cylinder_11 false
+#define ts_show_fuel_trim_cylinder_12 false
+#define ts_show_second_bank false
+#define ts_show_bank2_cam1 false
+#define ts_show_bank2_cam2 false
+
+! fixed analog front end
+#define ts_show_analog_divider false
+#define ts_show_clt_iat_pullup false
+
+! no ETB, no knock, no CAN2, SPI2/SPI3 not routed, no TPS2, no GDI, no EGT
+#define ts_show_etb false
+#define ts_show_etb_pins false
+#define ts_show_software_knock false
+#define ts_show_can2 false
+#define ts_show_spi2_enable false
+#define ts_show_spi2_pins false
+#define ts_show_spi3_enable false
+#define ts_show_spi3_pins false
+#define ts_show_tps2 false
+#define ts_show_gdi false
+#define ts_show_egt false
+#define ts_show_k_line false
+#define ts_show_hardware_simulator false
+
+! idle stepper: DRV8421 driven by four push-pull outputs
+#define ts_show_stepper_push_pull true
+#define ts_show_stepper_hbridge false
