@@ -102,58 +102,76 @@ struct boost_control_s {
 	offset 0 bit 31 */
 	bool unusedBit_11_31 : 1 {};
 	/**
-	 * "Lua target add"
+	 * "Boost: Lua target add"
 	 * units: percent
 	 * offset 4
 	 */
 	scaled_channel<int16_t, 2, 1> luaTargetAdd = (int16_t)0;
 	/**
-	 * @@GAUGE_NAME_BOOST_TARGET@@
-	 * units: kPa
+	 * need 4 byte alignment
+	 * units: units
 	 * offset 6
 	 */
-	scaled_channel<int16_t, 30, 1> boostControlTarget = (int16_t)0;
+	uint8_t alignmentFill_at_6[2] = {};
 	/**
-	 * "Lua target mult"
+	 * "Boost: Lua target mult"
 	 * offset 8
 	 */
 	float luaTargetMult = (float)0;
 	/**
+	 * @@GAUGE_NAME_BOOST_TARGET@@
+	 * units: kPa
+	 * offset 12
+	 */
+	scaled_channel<int16_t, 30, 1> boostControlTarget = (int16_t)0;
+	/**
+	 * need 4 byte alignment
+	 * units: units
+	 * offset 14
+	 */
+	uint8_t alignmentFill_at_14[2] = {};
+	/**
 	 * @@GAUGE_NAME_BOOST_OPEN_LOOP@@
 	 * units: percent
-	 * offset 12
+	 * offset 16
 	 */
 	float openLoopPart = (float)0;
 	/**
-	 * offset 16
+	 * offset 20
 	 */
 	scaled_channel<int16_t, 10, 1> openLoopYAxis = (int16_t)0;
 	/**
-	 * @@GAUGE_NAME_BOOST_OUTPUT@@
-	 * units: percent
-	 * offset 18
+	 * need 4 byte alignment
+	 * units: units
+	 * offset 22
 	 */
-	scaled_channel<int16_t, 100, 1> boostOutput = (int16_t)0;
+	uint8_t alignmentFill_at_22[2] = {};
 	/**
-	 * "Lua open loop add"
+	 * "Boost: Lua open loop add"
 	 * units: percent
-	 * offset 20
+	 * offset 24
 	 */
 	float luaOpenLoopAdd = (float)0;
 	/**
 	 * @@GAUGE_NAME_BOOST_CLOSED_LOOP@@
 	 * units: %
-	 * offset 24
+	 * offset 28
 	 */
 	scaled_channel<int8_t, 2, 1> boostControllerClosedLoopPart = (int8_t)0;
 	/**
 	 * need 4 byte alignment
 	 * units: units
-	 * offset 25
+	 * offset 29
 	 */
-	uint8_t alignmentFill_at_25[3] = {};
+	uint8_t alignmentFill_at_29[1] = {};
+	/**
+	 * @@GAUGE_NAME_BOOST_OUTPUT@@
+	 * units: percent
+	 * offset 30
+	 */
+	scaled_channel<int16_t, 100, 1> boostOutput = (int16_t)0;
 };
-static_assert(sizeof(boost_control_s) == 28);
+static_assert(sizeof(boost_control_s) == 32);
 
 // end
 // this section was generated automatically by rusEFI tool config_definition_base-all.jar based on (unknown script) controllers/actuators/boost_control.txt

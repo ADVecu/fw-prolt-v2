@@ -6,7 +6,7 @@
 // start of throttle_model_s
 struct throttle_model_s {
 	/**
-	 * Throttle model WOT
+	 * Air: Throttle model WOT
 	offset 0 bit 0 */
 	bool throttleUseWotModel : 1 {};
 	/**
@@ -103,7 +103,7 @@ struct throttle_model_s {
 	offset 0 bit 31 */
 	bool unusedBit_1_31 : 1 {};
 	/**
-	 * Throttle crossover pos
+	 * Air: Throttle crossover pos
 	 * units: %
 	 * offset 4
 	 */
@@ -115,7 +115,7 @@ struct throttle_model_s {
 	 */
 	uint8_t alignmentFill_at_6[2] = {};
 	/**
-	 * Throttle flow estimate
+	 * Air: Throttle flow estimate
 	 * units: g/s
 	 * offset 8
 	 */

@@ -18,22 +18,19 @@ static std::array<Gpio, 12> OUTPUTS = {
 	Gpio::D2,	// A4 Tach
 };
 
-// release_20260812 provides the custom_board_getMeta* hooks in board_overrides.h;
-// upstream owns getBoardMeta*(), so defining those here would be a duplicate symbol.
-static int boardGetMetaOutputsCount() {
+// release_20260812 API: these are weak symbols overridden directly. The custom_board_getMeta*
+// hooks used by fw-custom-example master are missing or declared-only in this release.
+int getBoardMetaOutputsCount() {
 	return static_cast<int>(OUTPUTS.size());
 }
 
-static Gpio* boardGetMetaOutputs() {
+Gpio* getBoardMetaOutputs() {
 	return OUTPUTS.data();
 }
 
-static int boardGetMetaDcOutputsCount() {
+int getBoardMetaDcOutputsCount() {
 	return 0;	// no DC motor (ETB) outputs on PROLT-V2
 }
 
 void setupBoardHardwareTestOverrides() {
-	custom_board_getMetaOutputsCount = boardGetMetaOutputsCount;
-	custom_board_getMetaOutputs = boardGetMetaOutputs;
-	custom_board_getMetaDcOutputsCount = boardGetMetaDcOutputsCount;
 }

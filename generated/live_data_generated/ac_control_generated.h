@@ -17,43 +17,43 @@ struct ac_control_s {
 	 */
 	uint8_t alignmentFill_at_1[3] = {};
 	/**
-	 * enabled
+	 * AC enabled
 	offset 4 bit 0 */
 	bool m_acEnabled : 1 {};
 	/**
-	 * engine too slow
+	 * AC engine too slow
 	offset 4 bit 1 */
 	bool engineTooSlow : 1 {};
 	/**
-	 * engine too fast
+	 * AC engine too fast
 	offset 4 bit 2 */
 	bool engineTooFast : 1 {};
 	/**
-	 * no CLT
+	 * AC no CLT
 	offset 4 bit 3 */
 	bool noClt : 1 {};
 	/**
-	 * engine too hot
+	 * AC engine too hot
 	offset 4 bit 4 */
 	bool engineTooHot : 1 {};
 	/**
-	 * tps too high
+	 * AC tps too high
 	offset 4 bit 5 */
 	bool tpsTooHigh : 1 {};
 	/**
-	 * disabled by Lua
+	 * AC disabled by Lua
 	offset 4 bit 6 */
 	bool isDisabledByLua : 1 {};
 	/**
-	 * compressor on
+	 * AC compressor on
 	offset 4 bit 7 */
 	bool acCompressorState : 1 {};
 	/**
-	 * pressure too low
+	 * AC pressure too low
 	offset 4 bit 8 */
 	bool acPressureTooLow : 1 {};
 	/**
-	 * pressure too high
+	 * AC pressure too high
 	offset 4 bit 9 */
 	bool acPressureTooHigh : 1 {};
 	/**

@@ -6,17 +6,17 @@
 // start of wall_fuel_state_s
 struct wall_fuel_state_s {
 	/**
-	 * @@GAUGE_NAME_FUEL_WALL_CORRECTION@@
-	 * units: mg
+	 * fuel wallwetting injection time
+	 *  correction to account for wall wetting effect for current cycle
 	 * offset 0
 	 */
 	float wallFuelCorrection = (float)0;
 	/**
-	 * @@GAUGE_NAME_FUEL_WALL_AMOUNT@@
-	 * units: mg
+	 * Fuel on the wall
+	 * in ms of injector open time for each injector.
 	 * offset 4
 	 */
-	float wallFuel = (float)0;
+	floatms_t wallFuel = (floatms_t)0;
 };
 static_assert(sizeof(wall_fuel_state_s) == 8);
 

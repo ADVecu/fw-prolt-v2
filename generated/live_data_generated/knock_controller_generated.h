@@ -12,7 +12,7 @@ struct knock_controller_s {
 	 */
 	float m_knockLevel = (float)0;
 	/**
-	 * Cyl
+	 * Knock: Cyl
 	 * units: dBv
 	 * offset 4
 	 */
@@ -24,7 +24,7 @@ struct knock_controller_s {
 	 */
 	angle_t m_knockRetard = (angle_t)0;
 	/**
-	 * Threshold
+	 * Knock: Threshold
 	 * offset 20
 	 */
 	float m_knockThreshold = (float)0;
@@ -34,46 +34,46 @@ struct knock_controller_s {
 	 */
 	uint32_t m_knockCount = (uint32_t)0;
 	/**
-	 * Max retard
+	 * Knock: Max retard
 	 * offset 28
 	 */
 	float m_maximumRetard = (float)0;
 	/**
-	 * SpectrumData
+	 * Knock: SpectrumData
 	 * units: compressed data
 	 * offset 32
 	 */
 	uint32_t m_knockSpectrum[16] = {};
 	/**
-	 * ChannelAndCylNumber
+	 * Knock: ChannelAndCylNumber
 	 * units: compressed N + N
 	 * offset 96
 	 */
 	uint16_t m_knockSpectrumChannelCyl = (uint16_t)0;
 	/**
-	 * Start Freq
+	 * Knock: Start Freq
 	 * units: Hz
 	 * offset 98
 	 */
 	uint16_t m_knockFrequencyStart = (uint16_t)0;
 	/**
-	 * Step Freq
+	 * Knock: Step Freq
 	 * units: Hz
 	 * offset 100
 	 */
 	float m_knockFrequencyStep = (float)0;
 	/**
-	 * Fuel trim when knock
+	 * Knock: Fuel trim when knock
 	 * units: multiplier
 	 * offset 104
 	 */
 	float m_knockFuelTrimMultiplier = (float)0;
 	/**
-	 * Detected recently
+	 * Knock: Detected recently
 	offset 108 bit 0 */
 	bool hasKnockRecently : 1 {};
 	/**
-	 * Retard active
+	 * Knock: Retard active
 	offset 108 bit 1 */
 	bool hasKnockRetardNow : 1 {};
 	/**
