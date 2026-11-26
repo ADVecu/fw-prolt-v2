@@ -10,6 +10,9 @@ on:
 jobs:
   build-firmware:
     runs-on: ubuntu-latest
+    # main builds commit the auto-generated configs back to the repo
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
         with:
