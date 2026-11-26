@@ -6,7 +6,7 @@
 Gpio GENERATED_OUTPUTS[] = {
 	Gpio::C13, // A1 - Coil 1
 	Gpio::E5, // A2 - Coil 2
-	Gpio::E4, // A3 - Coil 3 (JP101)
+	Gpio::E4, // A3 - Coil 3
 	Gpio::D2, // A4 - Tach Output
 	Gpio::D10, // B1 - Injector 4
 	Gpio::D11, // C1 - Injector 3
@@ -14,15 +14,11 @@ Gpio GENERATED_OUTPUTS[] = {
 	Gpio::D3, // E1 - Injector 1
 	Gpio::D13, // G3 - LS Output 1
 	Gpio::C6, // G4 - LS Output 2
-	Gpio::A8, // A3 - LS Output 3 (JP101)
+	Gpio::A8, // A3 - LS Output 3
 	Gpio::D15, // D4 - LS Output 4
-	Gpio::B14, // H3 - Stepper A+
-	Gpio::C7, // H2 - Stepper A-
-	Gpio::C8, // H4 - Stepper B+
-	Gpio::B15, // H1 - Stepper B-
 // "A1 - Coil 1",
 // "A2 - Coil 2",
-// "A3 - Coil 3 (JP101)",
+// "A3 - Coil 3",
 // "A4 - Tach Output",
 // "B1 - Injector 4",
 // "C1 - Injector 3",
@@ -30,10 +26,6 @@ Gpio GENERATED_OUTPUTS[] = {
 // "E1 - Injector 1",
 // "G3 - LS Output 1",
 // "G4 - LS Output 2",
-// "A3 - LS Output 3 (JP101)",
+// "A3 - LS Output 3",
 // "D4 - LS Output 4",
-// "H3 - Stepper A+",
-// "H2 - Stepper A-",
-// "H4 - Stepper B+",
-// "H1 - Stepper B-",
 }

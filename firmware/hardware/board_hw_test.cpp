@@ -10,10 +10,10 @@ static std::array<Gpio, 12> OUTPUTS = {
 	Gpio::D10,	// B1 INJ4
 	Gpio::C13,	// A1 IGN1
 	Gpio::E5,	// A2 IGN2
-	Gpio::E4,	// A3 IGN3 (JP101)
+	Gpio::E4,	// A3 IGN3 (only with JP101 moved to IGN)
 	Gpio::D13,	// G3 LS Out 1
 	Gpio::C6,	// G4 LS Out 2
-	Gpio::A8,	// A3 LS Out 3 (JP101)
+	Gpio::A8,	// A3 LS Out 3 (default JP101)
 	Gpio::D15,	// D4 LS Out 4
 	Gpio::D2,	// A4 Tach
 };

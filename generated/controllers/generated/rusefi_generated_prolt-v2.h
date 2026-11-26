@@ -58,8 +58,8 @@
 #define adc_channel_e_EFI_ADC_ERROR 50
 #define adc_channel_e_EFI_ADC_NONE 0
 #define adc_channel_e_EFI_ADC_TOTAL_CHANNELS 49
-#define adc_channel_e_enum 0="NONE",13="B2 - IAT",14="B3 - CLT",11="B4 - MAP",5="C2 - TPS",1="C3 - Aux Analog 1",2="C4 - Aux Analog 2",6="G1 - 12V Key"
-#define adc_channel_e_fullenum "NONE","C3 - Aux Analog 1","C4 - Aux Analog 2","INVALID","INVALID","C2 - TPS","G1 - 12V Key","INVALID","INVALID","INVALID","INVALID","B4 - MAP","INVALID","B2 - IAT","B3 - CLT","INVALID"
+#define adc_channel_e_enum 0="NONE",13="B2 - IAT",14="B3 - CLT",11="B4 - MAP",5="C2 - TPS",1="C3 - Aux Analog 1",2="C4 - Aux Analog 2"
+#define adc_channel_e_fullenum "NONE","C3 - Aux Analog 1","C4 - Aux Analog 2","INVALID","INVALID","C2 - TPS","INVALID","INVALID","INVALID","INVALID","INVALID","B4 - MAP","INVALID","B2 - IAT","B3 - CLT","INVALID"
 #define ADC_CHANNEL_NONE 0
 #define afr_sensor_s_size 20
 #define air_pressure_sensor_config_s_size 12
@@ -1492,8 +1492,8 @@
 #define OUTPUT_CHANNEL_SD_LOGGING_INTERNAL "sd_logging_internal"
 #define OUTPUT_CHANNEL_SD_MSD "sd_msd"
 #define OUTPUT_CHANNEL_SD_PRESENT "sd_present"
-#define output_pin_e_enum 0="NONE",47="A1 - Coil 1",71="A2 - Coil 2",70="A3 - Coil 3 (JP101)",10="A3 - LS Output 3 (JP101)",52="A4 - Tach Output",60="B1 - Injector 4",61="C1 - Injector 3",11="D1 - Injector 2",65="D4 - LS Output 4",53="E1 - Injector 1",63="G3 - LS Output 1",40="G4 - LS Output 2",33="H1 - Stepper B-",41="H2 - Stepper A-",32="H3 - Stepper A+",42="H4 - Stepper B+"
-#define output_pin_e_fullenum "NONE","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","A3 - LS Output 3 (JP101)","D1 - Injector 2","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","H3 - Stepper A+","H1 - Stepper B-","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","G4 - LS Output 2","H2 - Stepper A-","H4 - Stepper B+","INVALID","INVALID","INVALID","INVALID","A1 - Coil 1","INVALID","INVALID","INVALID","INVALID","A4 - Tach Output","E1 - Injector 1","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","B1 - Injector 4","C1 - Injector 3","INVALID","G3 - LS Output 1","INVALID","D4 - LS Output 4","INVALID","INVALID","INVALID","INVALID","A3 - Coil 3 (JP101)","A2 - Coil 2","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID"
+#define output_pin_e_enum 0="NONE",47="A1 - Coil 1",71="A2 - Coil 2",70="A3 - Coil 3",10="A3 - LS Output 3",52="A4 - Tach Output",60="B1 - Injector 4",61="C1 - Injector 3",11="D1 - Injector 2",65="D4 - LS Output 4",53="E1 - Injector 1",63="G3 - LS Output 1",40="G4 - LS Output 2"
+#define output_pin_e_fullenum "NONE","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","A3 - LS Output 3","D1 - Injector 2","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","G4 - LS Output 2","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","A1 - Coil 1","INVALID","INVALID","INVALID","INVALID","A4 - Tach Output","E1 - Injector 1","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","B1 - Injector 4","C1 - Injector 3","INVALID","G3 - LS Output 1","INVALID","D4 - LS Output 4","INVALID","INVALID","INVALID","INVALID","A3 - Coil 3","A2 - Coil 2","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID"
 #define PACK_ADD_TEMPERATURE 40
 #define PACK_MULT_AFR 1000
 #define PACK_MULT_AFR_CFG 10
@@ -1642,7 +1642,7 @@
 #define SentInput_NONE 0
 #define show_tcu_gauges false
 #define show_vvt_output_pin true
-#define SIGNATURE_HASH 73605976
+#define SIGNATURE_HASH 4172517263
 #define SIMULATOR_TUNE_BIN_FILE_NAME "generated/simulator_tune_image.bin"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_PREFIX "generated/simulator_tune_image"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_SUFFIX ".bin"
@@ -2236,7 +2236,7 @@
 #define ts_show_startup_map_baro_grab true
 #define ts_show_status_leds true
 #define ts_show_stepper_hbridge false
-#define ts_show_stepper_push_pull true
+#define ts_show_stepper_push_pull false
 #define ts_show_strokes true
 #define ts_show_sync_cam true
 #define ts_show_tachometer true
@@ -2261,7 +2261,7 @@
 #define ts_show_useNoiselessTriggerDecoder true
 #define ts_show_useRunningMathForCranking true
 #define ts_show_useSeparateVeForIdle true
-#define ts_show_vbatt true
+#define ts_show_vbatt false
 #define ts_show_ve_blend true
 #define ts_show_ve_table_map true
 #define ts_show_veBlends2 true
@@ -2282,7 +2282,7 @@
 #define ts_show_wbo_canbus_index true
 #define ts_show_wbo_canbus_set_index true
 #define ts_show_wbo_canbus_set_type false
-#define TS_SIGNATURE "rusEFI claude/project-thread-578auk.2026.11.25.prolt-v2.73605976"
+#define TS_SIGNATURE "rusEFI claude/project-thread-578auk.2026.11.26.prolt-v2.4172517263"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_TEST_COMMAND 't'

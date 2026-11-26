@@ -7,21 +7,13 @@
 const char* getBoardSpecificPinName(brain_pin_e brainPin) {
 	switch (brainPin) {
 		case Gpio::A8:
-			return "A3 - LS Output 3 (JP101)";
+			return "A3 - LS Output 3";
 		case Gpio::A9:
 			return "D1 - Injector 2";
-		case Gpio::B14:
-			return "H3 - Stepper A+";
-		case Gpio::B15:
-			return "H1 - Stepper B-";
 		case Gpio::C13:
 			return "A1 - Coil 1";
 		case Gpio::C6:
 			return "G4 - LS Output 2";
-		case Gpio::C7:
-			return "H2 - Stepper A-";
-		case Gpio::C8:
-			return "H4 - Stepper B+";
 		case Gpio::D10:
 			return "B1 - Injector 4";
 		case Gpio::D11:
@@ -43,7 +35,7 @@ const char* getBoardSpecificPinName(brain_pin_e brainPin) {
 		case Gpio::E14:
 			return "D3 - Digital Input 2";
 		case Gpio::E4:
-			return "A3 - Coil 3 (JP101)";
+			return "A3 - Coil 3";
 		case Gpio::E5:
 			return "A2 - Coil 2";
 		default:

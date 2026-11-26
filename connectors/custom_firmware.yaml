@@ -12,7 +12,7 @@ pins:
 
   - id: E4
     class: outputs
-    ts_name: A3 - Coil 3 (JP101)
+    ts_name: A3 - Coil 3
 
   - id: D2
     class: outputs
@@ -44,27 +44,11 @@ pins:
 
   - id: A8
     class: outputs
-    ts_name: A3 - LS Output 3 (JP101)
+    ts_name: A3 - LS Output 3
 
   - id: D15
     class: outputs
     ts_name: D4 - LS Output 4
-
-  - id: B14
-    class: outputs
-    ts_name: H3 - Stepper A+
-
-  - id: C7
-    class: outputs
-    ts_name: H2 - Stepper A-
-
-  - id: C8
-    class: outputs
-    ts_name: H4 - Stepper B+
-
-  - id: B15
-    class: outputs
-    ts_name: H1 - Stepper B-
 
 # ---------------- analog inputs ----------------
   - id: EFI_ADC_12
@@ -90,10 +74,6 @@ pins:
   - id: EFI_ADC_1
     class: analog_inputs
     ts_name: C4 - Aux Analog 2
-
-  - id: EFI_ADC_5
-    class: analog_inputs
-    ts_name: G1 - 12V Key
 
 # ---------------- event / switch inputs ----------------
   - id: E1
